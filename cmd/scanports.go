@@ -64,7 +64,7 @@ func scanPorts(cmd *cobra.Command, args []string){
 			<-semaphore
 
 		}else{
-			go scanport.PingScan(singlePort, host, &wg, resChan)
+			go scanport.TcpScan(singlePort, host, &wg, resChan)
 			<-semaphore
 		}
 		
@@ -88,7 +88,7 @@ func scanPorts(cmd *cobra.Command, args []string){
 				<-semaphore
 			}else{
 
-				go scanport.PingScan(port, host, &wg, resChan)	
+				go scanport.TcpScan(port, host, &wg, resChan)	
 				<-semaphore		
 			}
 		}
@@ -114,7 +114,7 @@ func scanPorts(cmd *cobra.Command, args []string){
 				go scanport.UdpScan(i, host, &wg, resChan)
 	
 			}else{
-				go scanport.PingScan(i, host, &wg, resChan)
+				go scanport.TcpScan(i, host, &wg, resChan)
 				}
 			}
 		}

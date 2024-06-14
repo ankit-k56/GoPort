@@ -18,7 +18,7 @@ type Output struct {
 	ClosedPorts []PortStatus `json:"closedPorts"`
 	
 }
-func PingScan( port int, host string, wg *sync.WaitGroup, resChan chan<- PortStatus)  {
+func TcpScan( port int, host string, wg *sync.WaitGroup, resChan chan<- PortStatus)  {
 	defer wg.Done()
 	address := fmt.Sprintf("%s:%d", host, port)
 
