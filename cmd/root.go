@@ -47,6 +47,7 @@ func customHelpFunc(cmd *cobra.Command, args []string) {
 
 	fmt.Println(green(tile.String()))
 	fmt.Println(green("A simple and Fast port scanning tool written in GoLang"))
+	fmt.Println("Version: 1.0.0")
 	
 	fmt.Println("Usage:")
 	fmt.Println(green("  goport [flags]"))

@@ -1,8 +1,8 @@
 # Go Port
 
-[![Tool Category](https://badgen.net/badge/Tool/Port%20Scanner/black)](https://github.com/nxenon/port-scanner-go)
-[![APP Version](https://badgen.net/badge/Version/v1.1/red)](https://github.com/nxenon/port-scanner-go)
-[![Go Version](https://badgen.net/badge/Go/1.13/blue)](https://golang.org/doc/go1.21.3)
+[![Tool Category](https://badgen.net/badge/Tool/Port%20Scanner/black)](https://github.com/ankit-k56/GoPort)
+[![APP Version](https://badgen.net/badge/Version/v1.1/red)](https://github.com/ankit-k56/GoPort)
+[![Go Version](https://badgen.net/badge/Go/1.21.3/blue)](https://golang.org/doc/go1.21.3)
 
 GoPort is a streamlined and efficient port scanning tool developed in GoLang. Engineered for speed and performance, this CLI tool can scan both TCP and UDP ports on a host. By leveraging GoLang's concurrency features, GoPort delivers fast and straightforward port scanning, making it both user-friendly and highly effective. Additionally, GoPort outputs the results to a separate file to prevent terminal clutter.
 
